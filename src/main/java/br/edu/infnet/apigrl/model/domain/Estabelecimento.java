@@ -6,12 +6,14 @@ import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 @Entity
-@Inheritance(strategy = InheritanceType.JOINED)
 @Table(name="TEstabelecimento", 
 uniqueConstraints = @UniqueConstraint(columnNames={"cnpj"})
 )
@@ -22,6 +24,8 @@ public class Estabelecimento extends Usuario {
 	private boolean edtech;
 	
 	@OneToMany(cascade = CascadeType.REMOVE, orphanRemoval = true)
+	@JoinColumn(name="idEstabelecimento")
+	@JsonManagedReference
 	private List<Funcionario> funcionarios;
 	
 	public String getCnpj() {

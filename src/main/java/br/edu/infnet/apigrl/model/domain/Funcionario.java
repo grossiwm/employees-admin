@@ -8,8 +8,9 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 @Entity
-@Inheritance(strategy = InheritanceType.JOINED)
 @Table(name="TFuncionario", 
 uniqueConstraints = @UniqueConstraint(columnNames={"cpf"})
 )
@@ -21,6 +22,7 @@ public class Funcionario extends Usuario {
 	
 	@ManyToOne
 	@JoinColumn(name="idEstabelecimento")
+	@JsonBackReference
 	private Estabelecimento estabelecimento;
 	
 	public Estabelecimento getEstabelecimento() {
