@@ -1,4 +1,4 @@
-package br.edu.infnet.apigrl.controller;
+package br.edu.infnet.estabelecimentoapi.controller;
 
 import java.util.List;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.edu.infnet.apigrl.model.domain.Usuario;
-import br.edu.infnet.apigrl.model.service.UsuarioService;
+import br.edu.infnet.estabelecimentoapi.model.domain.Usuario;
+import br.edu.infnet.estabelecimentoapi.model.service.UsuarioService;
 
 @RestController
 @RequestMapping("/api/usuario")

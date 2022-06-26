@@ -1,4 +1,4 @@
-package br.edu.infnet.apigrl.controller;
+package br.edu.infnet.estabelecimentoapi.controller;
 
 import java.util.List;
 
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.edu.infnet.apigrl.model.domain.Funcionario;
-import br.edu.infnet.apigrl.model.service.FuncionarioService;
+import br.edu.infnet.estabelecimentoapi.model.domain.Funcionario;
+import br.edu.infnet.estabelecimentoapi.model.service.FuncionarioService;
 
 
 @RestController

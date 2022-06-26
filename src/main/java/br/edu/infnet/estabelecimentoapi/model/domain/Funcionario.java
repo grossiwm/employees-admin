@@ -1,4 +1,4 @@
-package br.edu.infnet.apigrl.model.domain;
+package br.edu.infnet.estabelecimentoapi.model.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.Inheritance;

@@ -1,13 +1,13 @@
-package br.edu.infnet.apigrl;
+package br.edu.infnet.estabelecimentoapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ApiGrlApplication {
+public class EstabelecimentoApiApp {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ApiGrlApplication.class, args);
+		SpringApplication.run(EstabelecimentoApiApp.class, args);
 	}
 
 }

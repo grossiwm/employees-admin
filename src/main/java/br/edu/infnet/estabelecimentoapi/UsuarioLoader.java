@@ -1,4 +1,4 @@
-package br.edu.infnet.apigrl;
+package br.edu.infnet.estabelecimentoapi;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
@@ -6,8 +6,8 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import br.edu.infnet.apigrl.model.domain.Usuario;
-import br.edu.infnet.apigrl.model.service.UsuarioService;
+import br.edu.infnet.estabelecimentoapi.model.domain.Usuario;
+import br.edu.infnet.estabelecimentoapi.model.service.UsuarioService;
 
 @Order(3)
 @Component
