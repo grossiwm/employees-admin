@@ -21,7 +21,7 @@ public class FuncionarioController {
 	@Autowired
 	private FuncionarioService funcionarioService;
 
-	@PostMapping(value = "/incluir")
+	@PostMapping
 	public void incluir(@RequestBody Funcionario funcionario) {
 		funcionarioService.incluir(funcionario);		
 	}

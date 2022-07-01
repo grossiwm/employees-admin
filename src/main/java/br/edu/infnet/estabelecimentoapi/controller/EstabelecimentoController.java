@@ -1,6 +1,9 @@
 package br.edu.infnet.estabelecimentoapi.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,9 +19,14 @@ public class EstabelecimentoController {
 	@Autowired
 	private EstabelecimentoService estabelecimentoService;
 
-	@PostMapping(value = "/incluir")
+	@PostMapping
 	public void incluir(@RequestBody Estabelecimento estabelecimento) {
 		estabelecimentoService.incluir(estabelecimento);
+	}
+	
+	@GetMapping
+	public List<Estabelecimento> listar() {
+		return estabelecimentoService.buscarTodos();
 	}
 
 }
