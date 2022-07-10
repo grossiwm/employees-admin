@@ -24,7 +24,7 @@ public class EstabelecimentoLoader implements ApplicationRunner {
 			estabelecimento.setCnpj("00.673.757/0001-46");
 			estabelecimento.setEdtech(true);
 			estabelecimento.setEndereco("R. São José, 90 - Centro, Rio de Janeiro - RJ, 20010-020");
-			estabelecimento.setLogin("infnet");
+			estabelecimento.setEmail("infnet@infnet.com");
 			estabelecimento.setNome("Instituto Infnet");
 			estabelecimento.setSenha("x12345678901");		
 			

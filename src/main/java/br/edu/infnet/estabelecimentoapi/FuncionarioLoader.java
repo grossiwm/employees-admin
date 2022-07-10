@@ -33,7 +33,7 @@ public class FuncionarioLoader implements ApplicationRunner {
 			funcionario.setCpf(cpf);
 			funcionario.setEmail(cpf+"@professor.com");
 			funcionario.setEstabelecimento(estabelecimento);
-			funcionario.setLogin("infnet"+cpf);
+			funcionario.setEmail("infnet"+cpf + "@infnet.com");
 			funcionario.setNome("Instituto Infnet "+cpf);
 			funcionario.setSenha("x"+cpf);		
 			funcionario.setTelefone("(21) 99601-6255");

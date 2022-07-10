@@ -12,16 +12,22 @@ import javax.persistence.UniqueConstraint;
 @Entity
 @Table(
 		name = "TUsuario",
-				uniqueConstraints = @UniqueConstraint(columnNames={"login", "senha"})
+				uniqueConstraints = @UniqueConstraint(columnNames={"email", "senha"})
 )
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Usuario {
 	
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String nome;
-	private String login;
+	private String email;
 	private String senha;
 	public Integer getId() {
 		return id;
@@ -34,12 +40,6 @@ public class Usuario {
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
-	}
-	public String getLogin() {
-		return login;
-	}
-	public void setLogin(String login) {
-		this.login = login;
 	}
 	public String getSenha() {
 		return senha;

@@ -30,7 +30,7 @@ public class UsuarioLoader implements ApplicationRunner {
 				System.out.printf("%d - %s - %s\n",
 							usuario.getId(),
 							usuario.getNome(),
-							usuario.getLogin()
+							usuario.getSenha()
 						);
 			}
 		}
