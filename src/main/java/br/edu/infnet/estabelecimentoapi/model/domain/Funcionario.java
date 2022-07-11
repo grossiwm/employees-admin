@@ -1,8 +1,6 @@
 package br.edu.infnet.estabelecimentoapi.model.domain;
 
 import javax.persistence.Entity;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
@@ -17,7 +15,6 @@ uniqueConstraints = @UniqueConstraint(columnNames={"cpf"})
 public class Funcionario extends Usuario {
 	
 	private String cpf;
-	private String email;
 	private String telefone;
 	
 	@ManyToOne
@@ -37,12 +34,7 @@ public class Funcionario extends Usuario {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
+
 	public String getTelefone() {
 		return telefone;
 	}
